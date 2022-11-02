@@ -38,15 +38,22 @@ jobs:
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
-      
+
+      - name: Set up deploy environment
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 700 ~/.ssh
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.email "merore256@outlook.com"
+          git config --global user.name "merore"
+
       - name: Deploy
-        id: deploy
-        uses: sma11black/hexo-action@v1.0.3
-        with:
-          deploy_key: ${{ secrets.DEPLOY_KEY }}
-          user_name: merore
-          user_email: merore256@outlook.com
-          commit_msg: ${{ github.event.head_commit.message }}
+        run: |
+          hexo clean
+          hexo deploy
+
       - name: Get the output
         run: |
           echo "${{ steps.deploy.outputs.notify }}"
