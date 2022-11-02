@@ -25,6 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@v3
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
         
       - name: Cache node modules
         uses: actions/cache@v1
@@ -39,7 +44,9 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
 
-      - name: Set up deploy environment
+      - name: Setup deploy environment
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         run: |
           mkdir -p ~/.ssh/
           echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
@@ -48,6 +55,7 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "merore256@outlook.com"
           git config --global user.name "merore"
+          npm install hexo-cli -g
 
       - name: Deploy
         run: |
