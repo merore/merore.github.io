@@ -195,4 +195,7 @@ feed:
 # Deployment
 # Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:merore/merore.github.io.git
+  branch: gh_page
+  message: "{{ now('YYYY-MM-DD HH:mm:ss') }}"
