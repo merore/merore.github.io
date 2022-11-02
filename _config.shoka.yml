@@ -1,0 +1,157 @@
+alternate: 风月
+
+# Assets
+statics: / #//cdn.jsdelivr.net/gh/amehime/shoka@latest/
+
+menu:
+  home: / || home
+# archives: /archives/ || list-alt
+  categories: /categories/ || th
+# posts:
+#   default: / || feather
+#   archives: /archives/ || list-alt
+#   categories: /categories/ || th
+#  tags: /tags/ || tags
+# friends: /friends/ || heart
+
+# Social Links
+# Usage: `Key: permalink || icon || color`
+# Key is the link label showing to end users.
+# Value before `||` delimiter is the target permalink,
+# secend value is the name of Font icon.
+social:
+  github: https://github.com/merore || github || "#191717"
+  music: https://music.163.com/#/user/home?id=106944052 || cloud-music || "#e60026"
+  email: mailto:merore256@outlook.com || envelope || "#55acd5"
+
+loader:
+  start: false
+  switch: false
+
+fireworks:
+  enable: false
+
+reward:
+  enable: false
+
+sidebar:
+  position: right
+  avatar: avatar.jpg
+
+widgets:
+  random_posts: true # 显示随机文章
+  recent_comments: true # 显示最近评论
+
+footer:
+  # Specify the date when the site was setup. If not defined, current year will be used.
+  since: 2010
+  icon:
+    name: sakura rotate
+    # Change the color of icon, using Hex Code.
+    color: "#bfc8ca"
+  # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
+  count: false
+  powered: true
+
+
+ # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
+post:
+  count: true
+
+font:
+  enable: true
+  # Font options:
+  # `external: true` will load this font family from `host` above.
+  # `family: Times New Roman`. Without any quotes.
+  # `size: x.x`. Use `em` as unit. Default: 1 (16px)
+
+  # Global font settings used for all elements inside <body>.
+  global:
+    external: true
+    family: Mulish
+    size:
+
+  # Font settings for alternate title.
+  logo:
+    external: true
+    family: Fredericka the Great
+    size: 3.5
+
+  # Font settings for site title.
+  title:
+    external: true
+    family: Noto Serif JP
+    size: 2.5
+
+  # Font settings for headlines (<h1> to <h6>).
+  headings:
+    external: true
+    family: Noto Serif SC
+    size:
+
+  # Font settings for posts.
+  posts:
+    external: true
+    family:
+
+  # Font settings for <code> and code blocks.
+  codes:
+    external: true
+    family: Inconsolata
+# ---------------------------------------------------------------
+# Third Party Plugins & Services Settings
+# ---------------------------------------------------------------
+
+# Comments
+# Valine
+# For more information: https://valine.js.org, https://github.com/xCss/Valine
+# valine:
+#   appId: #这里不要忘了改
+#   appKey: #这里不要忘了改
+#   placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
+#   pageSize: 10 # Pagination size
+#   lang: zh-CN
+#   tagMember:
+#     master:
+#       # - deea5a8d259d17182a53be1772e4c182
+#     friend:
+#       - deea5a8d259d17182a53be1772e4c182
+
+# bgm
+audio:
+   - title: 安静的角落
+     list:
+        - https://music.163.com/#/playlist?id=2426530028
+
+# Dependencies: https://github.com/amehime/hexo-renderer-multi-markdown-it
+pangu: true
+
+# ---------------------------------------------------------------
+# analytics & SEO Settings
+# ---------------------------------------------------------------
+
+
+# Disable Baidu transformation on mobile devices.
+disable_baidu_transformation: true
+
+# Automatically add external URL with Base64 encrypt & decrypt.
+exturl: true
+
+vendors:
+  css:
+    katex: npm/katex@0.12.0/dist/katex.min.css
+    comment: css/comment.css
+    fancybox: combine/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css
+  js:
+    pace: npm/pace-js@1.0.2/pace.min.js
+    pjax: npm/pjax@0.2.8/pjax.min.js
+    fetch: npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js
+    anime: npm/animejs@3.2.0/lib/anime.min.js
+    algolia: npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
+    instantsearch: npm/instantsearch.js@4/dist/instantsearch.production.min.js
+    lazyload: npm/lozad@1/dist/lozad.min.js
+    quicklink: npm/quicklink@2/dist/quicklink.umd.js
+    fancybox: combine/npm/jquery@3.5.1/dist/jquery.min.js,npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js,npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js
+    valine: gh/amehime/MiniValine@4.2.2-beta10/dist/MiniValine.min.js
+    copy_tex: npm/katex@0.12.0/dist/contrib/copy-tex.min.js
+    chart: npm/frappe-charts@1.5.0/dist/frappe-charts.min.iife.min.js
