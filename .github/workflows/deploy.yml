@@ -41,7 +41,7 @@ jobs:
       
       - name: Deploy
         id: deploy
-        uses: smallblack/hexo-action@v1.0.3
+        uses: sma11black/hexo-action@v1.0.3
         with:
           deploy_key: ${{ secrets.DEPLOY_KEY }}
           user_name: merore
