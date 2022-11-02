@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://merore.github.io</id>
+    <title>莫胜文</title>
+    <subtitle>what will be, will be.</subtitle>
+    <icon>https://merore.github.io/images/favicon.ico</icon>
+    <link href="https://merore.github.io" />
+    <author>
+      <name>莫胜文</name>
+    </author>
+    <updated>2013-12-24T09:49:32.000Z</updated>
+    <entry>
+        <id>https://merore.github.io/hello-world/</id>
+        <title>Hello World</title>
+        <link rel="alternate" href="https://merore.github.io/hello-world/"/>
+        <content type="html">&lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3plc3BpYS50dy9oZXhv&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3plc3BpYS50dy9oZXhvL2RvY3M=&#34;&gt;documentation&lt;/span&gt; to learn how to use.&lt;/p&gt;
+</content>
+        <updated>2013-12-24T09:49:32.000Z</updated>
+    </entry>
+</feed>

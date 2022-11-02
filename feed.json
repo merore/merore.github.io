@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "莫胜文",
+    "subtitle": "what will be, will be.",
+    "icon": "https://merore.github.io/images/favicon.ico",
+    "description": "",
+    "home_page_url": "https://merore.github.io",
+    "items": [
+        {
+            "id": "https://merore.github.io/hello-world/",
+            "url": "https://merore.github.io/hello-world/",
+            "title": "Hello World",
+            "date_published": "2013-12-24T09:49:32.000Z",
+            "content_html": "<p>Welcome to <span class=\"exturl\" data-url=\"aHR0cDovL3plc3BpYS50dy9oZXhv\">Hexo</span>! This is your very first post. Check <span class=\"exturl\" data-url=\"aHR0cDovL3plc3BpYS50dy9oZXhvL2RvY3M=\">documentation</span> to learn how to use.</p>\n",
+            "tags": []
+        }
+    ]
+}
