@@ -58,11 +58,10 @@ jobs:
           git config --global user.email "merore256@outlook.com"
           git config --global user.name "merore"
           npm install hexo-cli -g
+          ./fill-sensitive.sh fill
 
       - name: Deploy
         run: |
-          ./fill-sensitive.sh fill
-          cat _config.shoka.yml
           hexo clean
           hexo deploy
 
