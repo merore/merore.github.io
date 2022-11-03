@@ -8,7 +8,9 @@
     {{ _url(item.link or item.path, '<img data-src="'+ _cover(item) +'">', {itemprop: 'url', title: postText}) }}
   </div>
   <div class="info">
+<!--
     {{postmeta.render(item)}}
+-->
     <h3>{{ _url(item.link or item.path, postText + (postTitleIcon or ''), {itemprop: 'url', title: postText}) }}</h3>
     <div class="excerpt">
       {%- if item.description %}
