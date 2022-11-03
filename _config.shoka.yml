@@ -117,14 +117,13 @@ valine:
     friend:
       #- deea5a8d259d17182a53be1772e4c182
 
-# bgm
 audio:
    - title: 安静的角落
      list:
-        - https://music.163.com/#/playlist?id=2426530028
-   - title: 个人随机
+        - https://music.163.com/#/playlist?id=7724871992
+   - title: 热闹的世界
      list:
-       - https://music.163.com/#/playlist?id=129968633
+        - https://music.163.com/#/playlist?id=7724892817
 
 # Dependencies: https://github.com/amehime/hexo-renderer-multi-markdown-it
 pangu: true
