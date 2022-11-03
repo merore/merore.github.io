@@ -56,7 +56,7 @@ footer:
 
  # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
 post:
-  count: true
+  count: false
 
 font:
   enable: true

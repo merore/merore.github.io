@@ -10,6 +10,13 @@
     {%- endif %}
     <time itemprop="dateCreated datePublished" datetime="{{ moment(item.date).format() }}">{{ date(item.date) }}</time>
   </span>
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">{{ __('post.edited') }}</span>
+    <time title="{{ __('post.modified') + __('symbol.colon') + full_date(post.updated) }}" itemprop="dateModified" datetime="{{ moment(post.updated).format() }}">{{ date(post.updated) }}</time>
+  </span>
   {%- if theme.post.count %}
   <span class="item" title="{{ __('symbols_count_time.count') }}">
     <span class="icon">
@@ -29,6 +36,16 @@
     <span class="text">{{ __('symbols_count_time.time') }}</span>
     {%- endif %}
     <span>{{ symbolsTime(item, config.symbols_count_time.awl, config.symbols_count_time.wpm, __('symbols_count_time.time_minutes')) }}</span>
+  </span>
+  {%- endif %}
+  {%- if theme.valine.appId and theme.valine.appKey and theme.valine.visitor %}
+  <span id="{{ page.path | replace('index.html', '') }}" class="item leancloud_visitors" data-flag-title="{{ post.title }}" title="{{ __('post.views') }}">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">{{ __('post.views') }}</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">{{ __('symbols_count_time.view') }}</span>
   </span>
   {%- endif %}
 </div>
