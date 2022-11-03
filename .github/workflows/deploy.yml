@@ -59,6 +59,7 @@ jobs:
           git config --global user.name "merore"
           npm install hexo-cli -g
           ./fill-sensitive.sh fill
+          cat _config.shoka.yml
 
       - name: Deploy
         run: |
