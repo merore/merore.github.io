@@ -61,7 +61,6 @@ jobs:
           echo "VALINE_APP_ID=$VALINE_APP_ID" >> .sensitive
           echo "VALINE_APP_KEY=$VALINE_APP_KEY" >> .sensitive
           ./fill-sensitive.sh fill
-          cat _config.shoka.yml
 
       - name: Deploy
         run: |
