@@ -137,6 +137,8 @@ pangu: true
 # analytics & SEO Settings
 # ---------------------------------------------------------------
 
+baidu_site_verification: c2049f44f2979912560e17f8963277ef
+baidu_push: true
 
 # Disable Baidu transformation on mobile devices.
 disable_baidu_transformation: true
