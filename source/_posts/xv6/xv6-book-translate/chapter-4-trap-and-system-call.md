@@ -118,4 +118,4 @@ COW fork 的基本方案是父子进程最初共享所有的物理页，但将�
 ## 练习
 1. `copyin` 和 `copyinstr` 以软件的形式遍历页表。调整内核页表以有用户程序的映射，让 `copyin` 和 `copystr` 能够直接使用 `memcpy` 拷贝系统调用参数到内核空间，以硬件的方式。
 2. 实现 `lazy allocation`
-3. 实现 COW fork
+3. 实现 `cow fork`
