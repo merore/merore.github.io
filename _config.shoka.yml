@@ -34,6 +34,8 @@ fireworks:
 reward:
   enable: false
 
+auto_scroll: false
+
 sidebar:
   position: right
   avatar: avatar.jpg
@@ -111,9 +113,12 @@ valine:
   placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
   pageSize: 10 # Pagination size
   lang: zh-CN
+  tagMeta:
+    visitor: 访客
+    master: 博主
   tagMember:
     master:
-      #- deea5a8d259d17182a53be1772e4c182
+      - 918f3b19a004c5b2aa8aa192e97e9e3d
     friend:
       #- deea5a8d259d17182a53be1772e4c182
 
