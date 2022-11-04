@@ -1,10 +1,13 @@
 #!/bin/bash
 
-if [ -f .sensitive ]; then
-    . .sensitive
-fi
 
 CONFIG_FILE=_config.shoka.yml
+
+VALINE_APP_ID=$VALINE_APP_ID
+VALINE_APP_KEY=$VALINE_APP_KEY
+
+echo $VALINE_APP_ID
+echo $VALINE_APP_KEY
 
 function fill()
 {
