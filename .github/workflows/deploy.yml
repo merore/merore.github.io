@@ -58,9 +58,7 @@ jobs:
           git config --global user.email "merore256@outlook.com"
           git config --global user.name "merore"
           npm install hexo-cli -g
-          echo "VALINE_APP_ID=$VALINE_APP_ID" >> .sensitive
-          echo "VALINE_APP_KEY=$VALINE_APP_KEY" >> .sensitive
-          ./fill-sensitive.sh fill
+          ./sensitive.sh 
 
       - name: Deploy
         run: |
