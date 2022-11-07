@@ -1,10 +1,15 @@
 #!/bin/bash
 
-CONFIG_FILE=_config.shoka.yml
+THEME_CONFIG_FILE=_config.shoka.yml
+CONFIG_FILE=_config.yml
+
+if [[ -f .sensitive ]]; then
+    . .sensitive
+fi
 
 function replacevar()
 {
-    sed -i "s/$1/$2/" $CONFIG_FILE
+    sed -i "s/$1/$2/" $3
 }
 
 function checkvar()
@@ -17,6 +22,8 @@ function checkvar()
 
 checkvar VALINE_APP_ID $VALINE_APP_ID
 checkvar VALINE_APP_KEY $VALINE_APP_KEY
+checkvar BAIDU_SEO_TOKEN $BAIDU_SEO_TOKEN
 
-replacevar VALINE_APP_ID $VALINE_APP_ID
-replacevar VALINE_APP_KEY $VALINE_APP_KEY
+replacevar VALINE_APP_ID $VALINE_APP_ID $THEME_CONFIG_FILE
+replacevar VALINE_APP_KEY $VALINE_APP_KEY $THEME_CONFIG_FILE
+replacevar BAIDU_SEO_TOKEN $BAIDU_SEO_TOKEN $CONFIG_FILE

@@ -192,10 +192,13 @@ feed:
         template: "themes/shoka/layout/_alternate/json.ejs"
         output: "feed.json"
 
+baidu_url_submit:
+  count: 100
+  host: i.merore.com
+  token: BAIDU_SEO_TOKEN
+  path: baidu_urls.txt
+
 # Deployment
 # Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: git@github.com:merore/merore.github.io.git
-  branch: gh_page
-  message: "{{ now('YYYY-MM-DD HH:mm:ss') }}"
+  - type: baidu_url_submitter
