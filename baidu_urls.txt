@@ -1,0 +1,5 @@
+https://i.merore.com/xv6/xv6-book-translate/chapter-6-locking/
+https://i.merore.com/xv6/xv6-book-translate/chapter-5-interrupts/
+https://i.merore.com/xv6/xv6-book-translate/chapter-4-trap-and-system-call/
+https://i.merore.com/xv6/xv6-book-translate/chapter-3-pagetable/
+https://i.merore.com/xv6/xv6-book-translate/chapter-2-operating-system-organization/
