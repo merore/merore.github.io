@@ -133,6 +133,9 @@ audio:
 # Dependencies: https://github.com/amehime/hexo-renderer-multi-markdown-it
 pangu: true
 
+search:
+  hits:
+    per_page: 10
 # ---------------------------------------------------------------
 # analytics & SEO Settings
 # ---------------------------------------------------------------
