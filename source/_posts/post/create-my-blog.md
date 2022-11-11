@@ -2,7 +2,7 @@
 title: 关于自建博客的若干问题
 date: 2022-11-11 10:33:09
 categories:
-- blog
+- post
 ---
 :::info no-icon
 本站点的技术框架
