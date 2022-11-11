@@ -5,8 +5,9 @@ statics: / #//cdn.jsdelivr.net/gh/amehime/shoka@latest/
 
 menu:
   home: / || home
-# archives: /archives/ || list-alt
   categories: /categories/ || th
+  archives: /archives/ || list-alt
+  faq: /faq/ || heart
 # posts:
 #   default: / || feather
 #   archives: /archives/ || list-alt
@@ -46,7 +47,7 @@ widgets:
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  since: 2010
+  since: 2022
   icon:
     name: sakura rotate
     # Change the color of icon, using Hex Code.
