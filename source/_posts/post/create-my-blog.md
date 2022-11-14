@@ -1,6 +1,7 @@
 ---
 title: 关于自建博客的若干问题
 date: 2022-11-11 10:33:09
+sticky: true
 categories:
 - post
 ---
