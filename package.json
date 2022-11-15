@@ -7,7 +7,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "build-ci": "./sensitive.sh && hexo generate"
+    "build-ci": "./preprocessing.sh && hexo generate"
   },
   "hexo": {
     "version": "6.3.0"

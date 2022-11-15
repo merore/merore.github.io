@@ -3,8 +3,8 @@
 THEME_CONFIG_FILE=_config.shoka.yml
 CONFIG_FILE=_config.yml
 
-if [[ -f .sensitive ]]; then
-    . .sensitive
+if [[ -f .private ]]; then
+    . .private
 fi
 
 function replacevar()
