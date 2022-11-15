@@ -114,6 +114,7 @@ valine:
   appKey: VALINE_APP_KEY #这里不要忘了改
   placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
   pageSize: 10 # Pagination size
+  avatar: 'mp'
   lang: zh-CN
   tagMeta:
     visitor: 访客
