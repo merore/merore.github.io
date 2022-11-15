@@ -8,6 +8,7 @@ menu:
   categories: /categories/ || th
   archives: /archives/ || list-alt
   faq: /faq/ || heart
+  tools: /tools/ || star
 # posts:
 #   default: / || feather
 #   archives: /archives/ || list-alt
